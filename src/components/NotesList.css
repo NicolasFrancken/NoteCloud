@@ -4,6 +4,10 @@
 
 .NotesList-h3 {
   font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
 }
