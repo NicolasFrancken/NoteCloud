@@ -1,0 +1,14 @@
+{
+  "notes": [
+    {
+      "title": "Create a note!",
+      "content": "I dare you...",
+      "id": 1
+    },
+    {
+      "title": "Feedback",
+      "content": "If you liked the app or you found something wrong, please let me know!",
+      "id": 2
+    }
+  ]
+}

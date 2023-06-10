@@ -1,0 +1,163 @@
+.NoteCreate-grey-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+
+.NoteCreate-container {
+  box-sizing: border-box;
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+  padding: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(190, 190, 190);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.NoteCreate-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.NoteCreate-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
+}
+
+.NoteCreate-leftright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.NoteCreate-close-btn {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.NoteCreate-close-btn img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+.NoteCreate-close-btn img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.NoteCreate-save-btn {
+  box-sizing: border-box;
+  width: 6rem;
+  height: 2.5rem;
+  font-family: "Kulim Park", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(240, 200, 55);
+  border: none;
+  border-radius: 5px;
+  align-self: flex-end;
+  transition: transform 0.3s ease;
+}
+
+.NoteCreate-save-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.NoteCreate-input {
+  padding: 0 0 1rem 1rem;
+  width: 80%;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Kulim Park", sans-serif;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgb(165, 165, 165);
+  overflow: hidden;
+}
+
+.NoteCreate-input:focus {
+  outline: none;
+}
+
+.NoteCreate-input::placeholder {
+  content: "Title";
+}
+
+.NoteCreate-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-family: "Kulim Park", sans-serif;
+  resize: none;
+}
+
+.NoteCreate-textarea:focus {
+  outline: none;
+}
+
+.NoteCreate-textarea:focus::-webkit-scrollbar {
+  display: none;
+}
+
+.NoteCreate-textarea::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .NoteCreate-container {
+    width: 100%;
+    height: 100%;
+    border-radius:unset
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .NoteCreate-container{
+    padding: 1.5rem;
+  }
+  .NoteCreate-input {
+    padding: 0 0 0.5rem 0.5rem;
+    font-size: 1.5rem;
+  }
+  .NoteCreate-textarea {
+    font-size: 0.9rem;
+  }
+  .NoteCreate-close-btn {
+    width: 35px;
+    height: 35px;
+  }
+  .NoteCreate-close-btn img {
+    width: 20px;
+    height: 20px;
+  }
+}
